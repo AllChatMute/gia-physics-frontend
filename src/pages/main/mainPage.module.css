@@ -1,0 +1,55 @@
+main {
+  background: #659dbd;
+}
+
+.main_heading {
+  font-size: 56px;
+  color: #eff6f9;
+}
+
+.main_img {
+  transform: rotate(15deg);
+  height: 450px;
+  width: 450px;
+}
+
+.why_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 50px;
+  border-radius: 20px;
+  background: #222;
+}
+
+.why_us_heading {
+  margin: 0 auto;
+  font-size: 36px;
+  color: #eff6f9;
+}
+
+.why_us_description {
+  color: #eff6f9;
+  font-size: 18px;
+  text-align: center;
+}
+
+.why_us_btn {
+  background: #00bc00;
+  padding: 10px;
+  border-style: none;
+  border-radius: 10px;
+}
+
+.why_us_btn a {
+  color: #eff6f9;
+  font-size: 18px;
+  text-decoration: none;
+  font-size: 26px;
+}

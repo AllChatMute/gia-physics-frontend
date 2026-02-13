@@ -5,13 +5,6 @@
   font-family: "Inter", sans-serif;
 }
 
-a,
-p,
-h1 {
-  color: #eff6f9;
-  text-decoration: none;
-}
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -22,36 +15,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header_img {
-  height: 48px;
-  width: 48px;
-}
-
-.header {
-  background: #222;
-  /* height: 50px; */
-  margin: 3px;
-}
-
-.header_navbar {
-  min-width: 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header_logo {
-  cursor: pointer;
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  gap: 10px;
-}
-
-.header_logo_name {
-  font-size: 26px;
 }
 
 .svg-wrapper {

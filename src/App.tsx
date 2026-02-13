@@ -1,12 +1,12 @@
 import "./App.css";
-import Header from "./components/Header";
+import Header from "./components/header/Header.tsx";
+import MainPage from "./pages/main/MainPage.tsx";
 
 function App() {
   return (
     <>
       <Header />
-      <main></main>
-      <footer></footer>
+      <MainPage />
     </>
   );
 }
