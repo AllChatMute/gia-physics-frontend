@@ -1,0 +1,41 @@
+.register {
+  margin: 100px;
+  color: #eff6f9;
+  background: #222;
+  border-radius: 15px;
+}
+.form {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.label {
+  font-size: 20px;
+}
+.input {
+  border: 2px #696969 solid;
+  border-radius: 5px;
+}
+
+.submit {
+  background: #00bc00;
+  padding: 10px;
+  border-style: none;
+  border-radius: 10px;
+  color: #eff6f9;
+  font-size: 18px;
+}
+
+.login {
+  font-size: 18px;
+  color: #696969;
+
+  a {
+    color: #696969;
+    /* text-decoration: none; */
+  }
+}

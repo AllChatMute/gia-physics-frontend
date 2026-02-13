@@ -1,4 +1,5 @@
 main {
+  padding-top: 50px;
   background: #659dbd;
 }
 
@@ -49,7 +50,6 @@ main {
 
 .why_us_btn a {
   color: #eff6f9;
-  font-size: 18px;
   text-decoration: none;
   font-size: 26px;
 }
