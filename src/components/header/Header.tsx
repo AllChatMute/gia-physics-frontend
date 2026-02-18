@@ -18,9 +18,9 @@ const Header = () => {
             </Link>
 
             <nav className={styles.navbar}>
-              <a href="#" className={styles.navbar_link}>
+              <Link to="/notes" className={styles.navbar_link}>
                 Конспекты
-              </a>
+              </Link>
               <a href="#" className={styles.navbar_link}>
                 Чат с ИИ
               </a>

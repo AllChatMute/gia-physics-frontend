@@ -1,0 +1,27 @@
+.notes {
+  margin-top: 75px;
+  padding: 35px;
+  background: #fffafa;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.heading {
+  font-size: 26px;
+}
+
+.section {
+}
+
+.list {
+  margin-top: 15px;
+}
+
+.li {
+  font-size: 16px;
+  margin-top: 3px;
+}
