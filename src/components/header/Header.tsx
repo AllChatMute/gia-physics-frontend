@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import styles from "./header.module.css";
 
 const Header = () => {
@@ -7,12 +8,15 @@ const Header = () => {
       <header className={styles.header}>
         <div className="container">
           <div className="wrapper">
-            <div className={styles.logo}>
-              <div className="svg-wrapper">
-                <img className={styles.img} src="/earth.svg" alt="" />
+            <Link to="/">
+              <div className={styles.logo}>
+                <div className="svg-wrapper">
+                  <img className={styles.img} src="/earth.svg" alt="" />
+                </div>
+                <h3 className={styles.logo_name}>gia-physics</h3>
               </div>
-              <h3 className={styles.logo_name}>gia-physics</h3>
-            </div>
+            </Link>
+
             <nav className={styles.navbar}>
               <a href="#" className={styles.navbar_link}>
                 Конспекты

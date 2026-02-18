@@ -1,4 +1,3 @@
-import "./App.css";
 import MainPage from "./pages/main/MainPage.tsx";
 import RegisterPage from "./pages/auth/RegisterPage.tsx";
 import LoginPage from "./pages/auth/LoginPage.tsx";

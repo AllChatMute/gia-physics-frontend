@@ -1,4 +1,5 @@
 import styles from "./registerPage.module.css";
+import { Link } from "react-router";
 
 const LoginPage = () => {
   return (
@@ -22,7 +23,7 @@ const LoginPage = () => {
                 Войти
               </button>
               <span className={styles.login}>
-                Еще нет аккаунта? <a href="#">Регистрация</a>
+                Еще нет аккаунта? <Link to="/register">Регистрация</Link>
               </span>
             </form>
           </div>

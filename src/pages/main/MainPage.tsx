@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import styles from "./mainPage.module.css";
 
 const MainPage = () => {
@@ -25,7 +26,7 @@ const MainPage = () => {
               скучных учебников
             </p>
             <button className={styles.why_us_btn}>
-              <a href="#">Начать подготовку бесплатно</a>
+              <Link to="/register">Начать подготовку бесплатно</Link>
             </button>
           </section>
         </div>
