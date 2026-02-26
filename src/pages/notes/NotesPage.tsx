@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import styles from "./notesPage.module.css";
 
 const NotesPage = () => {
@@ -13,55 +14,55 @@ const NotesPage = () => {
             </h3>
             <ul className={styles.list}>
               <li className={styles.li}>
-                <a className="title">Физические величины</a>
+                <Link to="/notes/1">Физические величины</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Строение вещества</a>
+                <Link to="/notes/2">Строение вещества</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Механическое движение. Траектория</a>
+                <Link to="/notes/3">Механическое движение. Траектория</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Прямолинейное равномерное движение</a>
+                <Link to="/notes/4">Прямолинейное равномерное движение</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/5">
                   Неравномерное движение. Средняя скорость
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Масса тела. Плотность вещества</a>
+                <Link to="/notes/">Масса тела. Плотность вещества</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Силы вокруг нас (силы тяжести, трения, упругости)
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Давление тел, жидкостей и газов</a>
+                <Link to="/notes/">Давление тел, жидкостей и газов</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Закон Архимеда</a>
+                <Link to="/notes/">Закон Архимеда</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Сообщающиеся сосуды. Шлюзы</a>
+                <Link to="/notes/">Сообщающиеся сосуды. Шлюзы</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Механическая работа, мощность и КПД</a>
+                <Link to="/notes/">Механическая работа, мощность и КПД</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Простые механизмы. Блоки</a>
+                <Link to="/notes/">Простые механизмы. Блоки</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Рычаг. Равновесие рычага. Момент силы</a>
+                <Link to="/notes/">Рычаг. Равновесие рычага. Момент силы</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Механическая энергия. Закон сохранения энергии
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Физика 7: все формулы и определения</a>
+                <Link to="/notes/">Физика 7: все формулы и определения</Link>
               </li>
             </ul>
           </div>
@@ -73,126 +74,128 @@ const NotesPage = () => {
 
             <ul className={styles.list}>
               <li className={styles.li}>
-                <a className="title">Введение в оптику</a>
+                <Link to="/notes/">Введение в оптику</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Тепловое движение. Броуновское движение</a>
+                <Link to="/notes/">
+                  Тепловое движение. Броуновское движение
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Диффузия. Взаимодействие молекул</a>
+                <Link to="/notes/">Диффузия. Взаимодействие молекул</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Тепловое равновесие. Температура. Шкала Цельсия
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Внутренняя энергия</a>
+                <Link to="/notes/">Внутренняя энергия</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Виды теплопередачи: теплопроводность, конвекция, излучение
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Количество теплоты. Удельная теплоёмкость
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Уравнение теплового баланса</a>
+                <Link to="/notes/">Уравнение теплового баланса</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Испарение. Конденсация</a>
+                <Link to="/notes/">Испарение. Конденсация</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Кипение. Удельная теплота парообразования
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Влажность воздуха</a>
+                <Link to="/notes/">Влажность воздуха</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Плавление и кристаллизация</a>
+                <Link to="/notes/">Плавление и кристаллизация</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Тепловые машины. ДВС. Удельная теплота сгорания топлива
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Электризация тел</a>
+                <Link to="/notes/">Электризация тел</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Два вида электрических зарядов. Взаимодействие зарядов
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Закон сохранения электрического заряда</a>
+                <Link to="/notes/">Закон сохранения электрического заряда</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Электрическое поле. Проводники и диэлектрики
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Постоянный электрический ток</a>
+                <Link to="/notes/">Постоянный электрический ток</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Сила тока. Напряжение</a>
+                <Link to="/notes/">Сила тока. Напряжение</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Электрическое сопротивление</a>
+                <Link to="/notes/">Электрическое сопротивление</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Закон Ома. Соединение проводников</a>
+                <Link to="/notes/">Закон Ома. Соединение проводников</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Работа и мощность электрического тока</a>
+                <Link to="/notes/">Работа и мощность электрического тока</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Закон Джоуля-Ленца и его применение</a>
+                <Link to="/notes/">Закон Джоуля-Ленца и его применение</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Электромагнитные явления</a>
+                <Link to="/notes/">Электромагнитные явления</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Колебательные и волновые явления</a>
+                <Link to="/notes/">Колебательные и волновые явления</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Физика 8: все формулы и определения</a>
+                <Link to="/notes/">Физика 8: все формулы и определения</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Опыты Эрстеда. Магнитное поле. Электромагнит
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Магнитное поле постоянного магнита</a>
+                <Link to="/notes/">Магнитное поле постоянного магнита</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Действие магнитного поля на проводник с током
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">
+                <Link to="/notes/">
                   Электромагнитная индукция. Опыты Фарадея
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Явления распространения света</a>
+                <Link to="/notes/">Явления распространения света</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Дисперсия света. Линза</a>
+                <Link to="/notes/">Дисперсия света. Линза</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Оптические приборы</a>
+                <Link to="/notes/">Оптические приборы</Link>
               </li>
               <li className={styles.li}>
-                <a className="title">Электромагнитные колебания и волны</a>
+                <Link to="/notes/">Электромагнитные колебания и волны</Link>
               </li>
             </ul>
           </div>

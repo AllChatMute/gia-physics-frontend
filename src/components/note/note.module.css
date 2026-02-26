@@ -1,4 +1,4 @@
-.notes {
+.note_wrapper {
   margin-top: 75px;
   padding: 35px;
   background: #fffafa;
@@ -10,15 +10,6 @@
   gap: 40px;
 }
 
-.heading {
-  font-size: 26px;
-}
-
-.list {
-  margin-top: 15px;
-}
-
-.li {
-  font-size: 16px;
-  margin-top: 3px;
+.note_p {
+  font-size: 18px;
 }
