@@ -5,7 +5,6 @@ import { Route, Routes } from "react-router";
 import MainLayout from "./layouts/MainLayout.tsx";
 import NotesPage from "./pages/notes/NotesPage.tsx";
 import Note from "./components/note/Note.tsx";
-import TasksPage from "./pages/tasks/TasksPage.tsx";
 import Task from "./components/task/Task.tsx";
 
 function App() {
@@ -18,8 +17,7 @@ function App() {
           <Route path="register" element={<RegisterPage />} />
           <Route path="notes" element={<NotesPage />} />
           <Route path="notes/:id" element={<Note />} />
-          <Route path="tasks" element={<TasksPage />} />
-          <Route path="tasks/:id" element={<Task />} />
+          <Route path="tasks" element={<Task />} />
         </Route>
       </Routes>
     </>

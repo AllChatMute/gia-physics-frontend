@@ -1,25 +1,40 @@
 import styles from "./task.module.css";
 import { useState, type ChangeEvent } from "react";
+import tasks from "../../assets/tasks.json" with { type: "json" };
 
 type Status = "Не решено" | "Решено верно" | "Решено неверно";
 
 const Task = () => {
   const [currentTaskId, setCurrentTaskId] = useState<number>(0);
   const [isAnswerShown, setIsAnswerShown] = useState<boolean>(false);
-  const [answer, setAnswer] = useState<string>("18");
   const [status, setStatus] = useState<Status>("Не решено");
   const [userAnswer, setUserAnswer] = useState<string>("");
+
+  const title = tasks[currentTaskId].title;
+  const answer = tasks[currentTaskId].answer;
+
+  const nulifyParams = () => {
+    setIsAnswerShown(false);
+    setStatus("Не решено");
+    setUserAnswer("");
+  };
 
   const handleDecreaseId = (id: number) => {
     if (id > 0) {
       setCurrentTaskId(id - 1);
+    } else {
+      setCurrentTaskId(tasks.length - 1);
     }
+    nulifyParams();
   };
 
   const handleIncreaseId = (id: number) => {
-    if (id < 4) {
+    if (id < tasks.length - 1) {
       setCurrentTaskId(id + 1);
+    } else {
+      setCurrentTaskId(0);
     }
+    nulifyParams();
   };
 
   const handleSubmitAnswer = (value: string) => {
@@ -40,10 +55,7 @@ const Task = () => {
     <>
       <div className="container">
         <main className={styles.task}>
-          <h4 className={styles.heading}>
-            Ласточка летит со скоростью 36 км/ч. Какой путь она преодолеет за
-            0,5 ч?
-          </h4>
+          <h4 className={styles.heading}>{title}</h4>
           <span className={styles.span}>Введите ответ:</span>
           <input
             type="text"
