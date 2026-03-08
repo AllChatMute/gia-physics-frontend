@@ -71,3 +71,17 @@
 .nav_buttons button {
   padding: 2px;
 }
+
+.neutral {
+  font-weight: 600;
+}
+
+.right {
+  color: #00bc00;
+  font-weight: 600;
+}
+
+.wrong {
+  color: #d81414;
+  font-weight: 600;
+}
