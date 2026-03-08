@@ -24,9 +24,9 @@ const Header = () => {
               <a href="#" className={styles.navbar_link}>
                 Чат с ИИ
               </a>
-              <a href="#" className={styles.navbar_link}>
+              <Link to="/tasks" className={styles.navbar_link}>
                 Задачи
-              </a>
+              </Link>
             </nav>
             <div className="header_profile">
               {logined && (
