@@ -85,3 +85,11 @@
   color: #d81414;
   font-weight: 600;
 }
+
+.ai {
+  width: 100%;
+}
+
+.ai img {
+  max-width: 50%;
+}

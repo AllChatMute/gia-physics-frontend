@@ -74,9 +74,8 @@ const Task = () => {
               className={styles.show_answer}
               onClick={() => setIsAnswerShown(!isAnswerShown)}
             >
-              {isAnswerShown ? "Скрыть ответ" : "Показать ответ"}
+              {isAnswerShown ? "Скрыть решение" : "Показать решение"}
             </button>
-            <span className={styles.answer}>{isAnswerShown && answer}</span>
           </div>
           <span
             className={
@@ -89,6 +88,14 @@ const Task = () => {
           >
             {status}
           </span>
+          {isAnswerShown && (
+            <div className={styles.ai}>
+              <h4>Решение:</h4>
+              <div className={styles.ai_solve}>
+                <img src={tasks[currentTaskId].solve_img} alt="" />
+              </div>
+            </div>
+          )}
 
           <div className={styles.nav_buttons}>
             <button onClick={() => handleDecreaseId(currentTaskId)}>
