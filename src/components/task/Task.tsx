@@ -68,7 +68,7 @@ const Task = () => {
               className={styles.complete}
               onClick={() => handleSubmitAnswer(userAnswer)}
             >
-              Подтвердить
+              Ответить
             </button>
             <button
               className={styles.show_answer}

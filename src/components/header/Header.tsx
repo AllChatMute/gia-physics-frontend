@@ -24,11 +24,7 @@ const Header = () => {
                 Задачи
               </Link>
             </nav>
-            <div className="header_profile">
-              <div className="svg-wrapper">
-                <img className={styles.img} src="/user.png" alt="" />
-              </div>
-            </div>
+            <div className="header_profile"></div>
           </div>
         </div>
       </header>

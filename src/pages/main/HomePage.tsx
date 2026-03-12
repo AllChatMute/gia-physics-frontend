@@ -1,7 +1,7 @@
 import { Link } from "react-router";
-import styles from "./mainPage.module.css";
+import styles from "./homePage.module.css";
 
-const MainPage = () => {
+const HomePage = () => {
   return (
     <>
       <main>
@@ -26,7 +26,7 @@ const MainPage = () => {
             </p>
 
             <button className={styles.why_us_btn}>
-              <Link to="/register">Начать подготовку бесплатно</Link>
+              <Link to="/notes">Начать подготовку бесплатно</Link>
             </button>
           </section>
         </div>
@@ -35,4 +35,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default HomePage;
