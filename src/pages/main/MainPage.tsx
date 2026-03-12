@@ -21,10 +21,10 @@ const MainPage = () => {
           <section className={styles.why_us}>
             <h2 className={styles.why_us_heading}>Почему стоит выбрать нас?</h2>
             <p className={styles.why_us_description}>
-              Генерируем объяснения без ошибок, персональные тесты по слабым
-              темам и разборы задач в реальном времени - без репетитора и
-              скучных учебников
+              Сгенерированные объяснения без ошибок, тесты по темам экзамена и
+              разборы задач от ИИ - без репетитора и скучных учебников
             </p>
+
             <button className={styles.why_us_btn}>
               <Link to="/register">Начать подготовку бесплатно</Link>
             </button>

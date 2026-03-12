@@ -2,7 +2,6 @@ import { Link } from "react-router";
 import styles from "./header.module.css";
 
 const Header = () => {
-  const logined = true;
   return (
     <>
       <header className={styles.header}>
@@ -21,19 +20,14 @@ const Header = () => {
               <Link to="/notes" className={styles.navbar_link}>
                 Конспекты
               </Link>
-              <a href="#" className={styles.navbar_link}>
-                Чат с ИИ
-              </a>
               <Link to="/tasks" className={styles.navbar_link}>
                 Задачи
               </Link>
             </nav>
             <div className="header_profile">
-              {logined && (
-                <div className="svg-wrapper">
-                  <img className={styles.img} src="/user.png" alt="" />
-                </div>
-              )}
+              <div className="svg-wrapper">
+                <img className={styles.img} src="/user.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
