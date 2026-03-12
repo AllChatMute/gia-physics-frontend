@@ -4,3 +4,5 @@
 2. cd ./gia-physics-frontend
 3. npm i (предварительно установить node.js и npm)
 4. npm run dev
+
+https://gia-physics-frontend.vercel.app/
