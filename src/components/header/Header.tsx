@@ -23,6 +23,9 @@ const Header = () => {
               <Link to="/tasks" className={styles.navbar_link}>
                 Задачи
               </Link>
+              <Link to="/prompt" className={styles.navbar_link}>
+                Как составить промпт?
+              </Link>
             </nav>
             <div className="header_profile"></div>
           </div>

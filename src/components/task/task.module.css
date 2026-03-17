@@ -74,16 +74,19 @@
 
 .neutral {
   font-weight: 600;
+  margin-top: 10px;
 }
 
 .right {
   color: #00bc00;
   font-weight: 600;
+  margin-top: 10px;
 }
 
 .wrong {
   color: #d81414;
   font-weight: 600;
+  margin-top: 10px;
 }
 
 .ai {

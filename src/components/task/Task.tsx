@@ -1,12 +1,14 @@
 import styles from "./task.module.css";
 import { useState, type ChangeEvent } from "react";
 import tasks from "../../assets/tasks.json" with { type: "json" };
+import { Link } from "react-router";
 
 type Status = "Не решено" | "Решено верно" | "Решено неверно";
 
 const Task = () => {
   const [currentTaskId, setCurrentTaskId] = useState<number>(0);
   const [isAnswerShown, setIsAnswerShown] = useState<boolean>(false);
+  const [wrongAnswersCnt, setWrongAnswersCnt] = useState<number>(0);
   const [status, setStatus] = useState<Status>("Не решено");
   const [userAnswer, setUserAnswer] = useState<string>("");
 
@@ -17,6 +19,7 @@ const Task = () => {
     setIsAnswerShown(false);
     setStatus("Не решено");
     setUserAnswer("");
+    setWrongAnswersCnt(0);
   };
 
   const handleDecreaseId = (id: number) => {
@@ -41,9 +44,13 @@ const Task = () => {
     if (value == "") {
       return;
     } else if (value == answer) {
+      setWrongAnswersCnt(2);
       setStatus("Решено верно");
     } else {
       setStatus("Решено неверно");
+      if (wrongAnswersCnt < 2) {
+        setWrongAnswersCnt(wrongAnswersCnt + 1);
+      }
     }
   };
 
@@ -72,9 +79,14 @@ const Task = () => {
             </button>
             <button
               className={styles.show_answer}
+              disabled={wrongAnswersCnt != 2}
               onClick={() => setIsAnswerShown(!isAnswerShown)}
             >
-              {isAnswerShown ? "Скрыть решение" : "Показать решение"}
+              {wrongAnswersCnt == 2
+                ? isAnswerShown
+                  ? "Скрыть решение"
+                  : "Показать решение"
+                : `До доступа к решению ${2 - wrongAnswersCnt} попыт${wrongAnswersCnt == 1 ? "ка" : "ки"}`}
             </button>
           </div>
           <span
@@ -94,6 +106,17 @@ const Task = () => {
               <div className={styles.ai_solve}>
                 <img src={tasks[currentTaskId].solve_img} alt="" />
               </div>
+              <h4>
+                Для вопросов по решению и полному обьяснению от ИИ:{" "}
+                <a href="https://alice.yandex.ru/" target="_blank">
+                  {" "}
+                  Яндекс Алиса ИИ
+                </a>
+              </h4>
+              <h4>
+                Составление промпта для решения задачи:{" "}
+                <Link to="/prompt">Руководство</Link>
+              </h4>
             </div>
           )}
 
