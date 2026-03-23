@@ -32,3 +32,15 @@
   color: #eff6f9;
   text-decoration: none;
 }
+
+@media (max-width: 500px) {
+  .logo_name {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar {
+    flex-direction: column;
+  }
+}

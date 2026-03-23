@@ -53,3 +53,18 @@ main {
   text-decoration: none;
   font-size: 26px;
 }
+
+@media (max-width: 500px) {
+  .main_img {
+    display: none;
+  }
+
+  .main_heading {
+    font-size: 40px;
+  }
+
+  .why_us {
+    margin-top: 25px;
+    font-size: 14px;
+  }
+}

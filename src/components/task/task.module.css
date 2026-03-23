@@ -18,15 +18,12 @@
 .span {
   width: 100%;
   margin-top: 15px;
+  font-size: 18px;
 }
 
 .li {
   font-size: 16px;
   margin-top: 3px;
-}
-
-.span {
-  font-size: 18px;
 }
 
 .input {
@@ -95,4 +92,19 @@
 
 .ai img {
   max-width: 50%;
+}
+
+@media (max-width: 500px) {
+  .ai img {
+    max-width: 100%;
+  }
+  .heading {
+    font-size: 16px;
+  }
+  .span {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 14px;
+  }
 }
