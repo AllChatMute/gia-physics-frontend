@@ -3,18 +3,15 @@
   padding: 35px;
   background: #fffafa;
   border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 40px;
 }
 
 .heading {
+  margin-top: 10px;
   font-size: 26px;
 }
 
-.list {
+.subheading {
+  margin: 0;
   margin-top: 10px;
 }
 

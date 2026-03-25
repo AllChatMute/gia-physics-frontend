@@ -7,9 +7,54 @@ const PromptPage = () => {
         <main className={styles.prompt}>
           <div className={styles.section}>
             <h3 className={styles.heading}>
+              Рекомендуемые нейросети для решения задач ГИА по физике:
+            </h3>
+            <h4 className={styles.subheading}>Бесплатные:</h4>
+            <ul className={styles.list}>
+              <li className={styles.li}>
+                <a href="https://giga.chat" target="_blank">
+                  GigaChat
+                </a>{" "}
+                — объясняет решения шаг за шагом
+              </li>
+              <li className={styles.li}>
+                <a href="https://chat.deepseek.com/">DeepSeek</a> — помогает с
+                формулами
+              </li>
+              <li className={styles.li}>
+                <a href="https://alice.yandex.ru/">YandexGPT</a> — быстрые
+                ответы и теория
+              </li>
+            </ul>
+            <h4 className={styles.subheading}>С ограничениями:</h4>
+            <ul className={styles.list}>
+              <li className={styles.li}>
+                <a href="https://claude.ai">Claude</a> — глубокие разборы задач
+              </li>
+              <li className={styles.li}>
+                <a href="https://www.perplexity.ai">Perplexity AI</a> — решения
+                с источниками
+              </li>
+            </ul>
+            <h4 className={styles.subheading}>Платные:</h4>
+            <ul className={styles.list}>
+              <li className={styles.li}>
+                <a href="https://chatgpt.com">ChatGPT</a> — самые точные и
+                подробные решения
+              </li>
+              <li className={styles.li}>
+                <a href="https://claude.ai">Claude Pro</a> — сложные задачи и
+                большие объяснения
+              </li>
+            </ul>
+          </div>
+          <div className={styles.section}>
+            <h3 className={styles.heading}>
               Как написать правильный промпт для решения задачи по физике?
             </h3>
-            <h4>Основные элементы хорошего промпта:</h4>
+            <h4 className={styles.subheading}>
+              Основные элементы хорошего промпта:
+            </h4>
             <ol className={styles.list}>
               <li className={styles.li}>
                 <strong>Роль для модели</strong>. Задайте нейросети роль

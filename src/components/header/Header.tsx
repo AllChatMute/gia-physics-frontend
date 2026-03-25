@@ -24,7 +24,7 @@ const Header = () => {
                 Задачи
               </Link>
               <Link to="/prompt" className={styles.navbar_link}>
-                Как составить промпт?
+                Руководство по использованию ИИ
               </Link>
             </nav>
             <div className="header_profile"></div>
