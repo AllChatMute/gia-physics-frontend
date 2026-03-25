@@ -106,19 +106,18 @@ const Task = () => {
               <div className={styles.ai_solve}>
                 <img src={tasks[currentTaskId].solve_img} alt="" />
               </div>
-              <h4>
-                Для вопросов по решению и полному обьяснению от ИИ:{" "}
-                <a href="https://alice.yandex.ru/" target="_blank">
-                  {" "}
-                  Яндекс Алиса ИИ
-                </a>
-              </h4>
-              <h4>
-                Составление промпта для решения задачи:{" "}
-                <Link to="/prompt">Руководство</Link>
-              </h4>
             </div>
           )}
+          <div className={styles.ask_ai}>
+            <h4>
+              Не получается решить? Попробуй воспользоваться искусственным
+              интеллектом: <Link to="/prompt"> список лучших нейросетей</Link>
+            </h4>
+            <h4>
+              Составление промпта для решения задачи:{" "}
+              <Link to="/prompt">руководство</Link>
+            </h4>
+          </div>
 
           <div className={styles.nav_buttons}>
             <button onClick={() => handleDecreaseId(currentTaskId)}>
